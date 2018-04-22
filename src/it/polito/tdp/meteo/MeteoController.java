@@ -35,6 +35,7 @@ public class MeteoController {
 	void doCalcolaSequenza(ActionEvent event) {
 		txtResult.clear();
 		txtResult.appendText(model.trovaSequenza(boxMese.getValue()));
+		txtResult.appendText("\nIl costo della soluzione è: "+ model.getCostoMigliorPercorso());
 	}
 
 	@FXML

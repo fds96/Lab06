@@ -29,6 +29,10 @@ public class SimpleCity {
 	public void setCosto(int costo) {
 		this.costo = costo;
 	}
+	
+	public void addCosto(int costo) {
+		this.costo+=costo;
+	}
 
 	@Override
 	public int hashCode() {
